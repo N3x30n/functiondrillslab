@@ -292,8 +292,12 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+//here i made my function into a one line function to give me my answer
+//my function string has a parameter of str and my function returns the parameter in uppercase because of the .toUpperCase with (str) being turned uppercase
+
 function string(str) {return str.toUpperCase(str)}
 console.log(string(sampleString))
+
 ////////////////// PROBLEM 18 ////////////////////
 /*
   Write a function called emailCheck that takes in
@@ -320,10 +324,15 @@ function emailCheck(email) {
 */
 
 //CODE HERE
+
+// So i read the problem and created the function chocoFrogs and set my parameter to be gold
 function chocoFrogs (gold) {
+  //here i created anoother variable frogs and made this equal to my parameters divided by 3 because each frog costs 3 gold
   frogs = gold / 3
+  //i then made my function return frogs as a number to get my solution
   return frogs
 }
+//here i set the variable totalFrogs equal to my function with 4 being my parameter this let me log totalFrogs to the console
 let totalFrogs = chocoFrogs(4)
 console.log(totalFrogs)
 ////////////////// PROBLEM 20 ////////////////////
@@ -333,6 +342,7 @@ console.log(totalFrogs)
 
 //CODE HERE
 function chocoFrogs2 (gold) {
+  //here i essentially copied my code from problem 19 but added the Math.trunc() equation to make frogs output a whole number
   frogs = Math.trunc(gold / 3)
   return frogs
 }
@@ -346,6 +356,12 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 
 //CODE HERE
 
+//i gave up on this one
+function ascending (array) {
+  for (i = 0; i < array.length; i++) {
+
+  }
+}
 
 ////////////////// PROBLEM 22 ////////////////////
 
@@ -369,13 +385,27 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = []
+
+let globalScope = ['duck']
+//duck is a global variable because its not in any function or statements
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = []
+
+let bathroomScope = ['rubberDuck', 'duck']
+//rubberDuck is a variable only for the bathroom function because it is declared inside the function bathroom
+//the variable duck is included because its a global variable and can be accessed by every function
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = []
+
+let bathtubScope = ['sailorDuck', 'duck']
+// this is the same as rubberDuck except its declared in the function bathtub and not bathroom
+//the variable duck is included because its a global variable and can be accessed by every function
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = []
+
+let pondScope = ['realDuck', 'duck']
+//realDuck is the same as all the other functions just it is declared in the pond function and not any of the other functions
+//the variable duck is included because its a global variable and can be accessed by every function
+
+
+console.log(`:)`)
